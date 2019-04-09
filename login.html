@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			input{
+				display: inline-block;
+				float: right;
+				margin-right: 105px;
+				/* margin-top: 30px; */
+			}
+			
+			#box div:nth-of-type(1) span{
+				float: left;
+			}
+			#box div:nth-of-type(1) input{
+				float: left;
+				margin-left: 50px;
+				margin-right: 0;
+			}
+			
+			
+			#box{
+				
+				width: 600px;
+				height: 600px;
+				/* border: 1px solid #000; */
+				margin: 100px auto;
+			}
+			#box .box2{
+				width: 400px;
+				height: 80px;
+				/* border: 1px solid #000; */
+				/* line-height: 80px; */
+				overflow: hidden;
+			}
+			#box .box2 .one{
+				width: 220px;
+				height:  50px;
+				/* background: pink; */
+				float: left;
+				margin: auto 0px;
+				
+			}
+			
+			#box .box2 .one input{
+				float: left;
+				
+			}
+			#box .box2 .one span{
+				display: block;
+				float: left;
+				margin-left: 48px;
+				font-size: 12px;
+				color: #ccc;
+			}
+			
+			#box button{
+				width: 100px;
+				height: 40px;
+				margin-left: 125px;
+			}
+			
+			#box .box2 div{
+				float: right;
+				margin-right: 100px;
+			}
+			#box .box2 p{
+				margin-left: 50px;
+				font-size: 12px;
+				color: #ccc;
+			}
+			
+			
+			#zhengque{
+				display: none;
+			}
+			#daxie{
+				display: none;
+			}
+			#bzhengque,#must,#sam,#unsam,#czhengque,#no,#yanzhengTrue{display: none;}
+			
+			#down{
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div  class="box2">
+				<span style="color: red;">*</span>&nbsp;<span>邮件地址</span>
+				<div class="one">
+					<input type="text" id="email"><span id="ospan">6~18个字符，可使用字母、数字、下划线，需以字母开头</span>
+				</div>
+				<div id="zhengque" style="color: blue;">正确</div>
+				<div id="daxie" style="color: red;">密码必须以大写开头</div>
+				@ <select name="" id="">
+					<option>163.com</option>
+					<option>126.com</option>
+				  </select>
+			</div>
+			
+			<div  class="box2">
+				<span style="color: red;">*</span>&nbsp;密码 
+				<div class="two">
+					<input type="password" id="opassword">
+					<p id="bspan">6~16个字符，区分大小写</p>
+				</div> 
+				<div id="bzhengque" style="color: blue;">正确</div>
+				<div id="must" style="color: red;">密码必须6~16个字符</div>
+			</div>
+			
+			<div  class="box2">
+				<span style="color: red;">*</span>&nbsp;确认密码
+				<div class="three">
+					<input type="password" id="rePassword"> 
+					<p id="respan">请再次填写密码</p>
+					<div id="sam" style="color: blue;">密码输入相同</div>
+					<div id="unsam" style="color: red;font-size: 12px;">密码输入不一致</div>
+				</div> 
+			</div>
+			
+			<div  class="box2">
+				<span style="color: red;">*</span>&nbsp;手机号码
+				<div class="four">
+					<input type="text" placeholder="+86-" id="tel">
+					<p id="tTel">请填写正确手机号</p>
+					<div id="czhengque" style="color: blue;">正确</div>
+					<div id="no" style="color: red;">电话号码不正确</div>
+				</div> 
+				
+			</div>
+			
+			<div  class="box2">
+				<span style="color: red;">*</span>&nbsp;验证码
+				<div class="four">
+					<input type="text" id="yanzheng">
+					<!-- <div style="float: right;">123213</div> -->
+					<p id="yanzhengM">区分大小写</p>
+				</div> 
+				<div id="yanzhengA" style="height: 25px;">
+					<div id="yanzhengma" style="float: right;width: 50px;height: 14px;border: 1px solid #000;font-size: 12px;text-align: center;"></div><span id="yanzhengTrue" style="color: blue;">正确</span>
+					<p id="down" style="font-size: 12px;">看不清，换一个</p>
+					
+				</div>
+				
+			</div>
+			<button>免费获取验证码</button>
+			<div  class="box2">
+				<span style="color: red;">*</span>&nbsp;短信验证码<input type="text">
+			</div>
+			<button style="background: green;" id="btn">立即注册</button>
+		</div>
+		
+		
+	<script src="login_js/email.js"></script>
+	</body>
+</html>

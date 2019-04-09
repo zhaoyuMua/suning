@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="shopCar_css/1.css"/>
+		<link rel="stylesheet" type="text/css" href="shopCar_download/font_992729_z8zzeudpgj/iconfont.css"/>
+		
+	</head>
+	<body>
+	<script src="jquery.min.js"></script>	
+	
+		<header>
+			<input type="checkbox" class="check">全选
+			<span>商品信息</span><span>规格</span><span>单价(元)</span><span>数量</span><span>小计(元)</span><span>操作</span>
+		</header>
+		
+		<section >
+			<input type="checkbox" class="la one" >
+			<img src="shopCar_img/1.png" >
+			<span style="width:150px;height:40px;"><a>网红汇丰优牧俄罗斯风味炭烧酸奶180gx16袋</a></span>
+			<span style="display:inline-block; margin-left:175px;">￥35.90</span>
+			<div>
+				<i class="iconfont icon-jian" id="jian" style="float:left"></i>
+				<input type="txt" id="num1" style="width:30px;height:12px;border:none;display:inline-block;float:left;text-align:center;" value="1">
+				<em class="iconfont icon-add" id="add" style="float:right;"></em>
+			</div>
+			<b style="display:inline-block;margin-left:225px;" id="pri">￥35.90</b>
+			<a style="margin-left:100px;" id="del1">删除</a>
+		</section>	
+		
+		<section >
+			<input type="checkbox" class="la two">
+			<img src="shopCar_img/2.jpg" >
+			<span style="width:150px;height:40px;"><a>伊利安慕希希腊风味酸奶128205g袋</a></span>
+			<span style="display:inline-block; margin-left:175px;">￥35.90</span>
+			<div>
+				<i class="iconfont icon-jian" style="float:left" id="jian2"></i>
+				<input type="txt" id="num2" value="1" style="width:30px;height:12px;border:none;display:inline-block;float:left;text-align:center;">
+				<em class="iconfont icon-add" style="float:right;" id="add2"></em>
+			</div>
+			<b style="display:inline-block;margin-left:225px;" id="pri2">￥35.90</b>
+			<a style="margin-left:100px;" id="del2">删除</a>
+		</section>	
+		
+		<footer>
+			<input type="checkbox" class="check">全选
+			<div id="tot">
+				总价：￥<span style="color:red;" id="price">0.00</span>
+			</div>
+			<div id="pay">
+				<span>去结算</span>
+			</div>
+		</footer>
+		
+	<script src="shopCar_js/allS.js"></script>	
+	<script src="shopCar_js/addJian.js"></script>
+	<script src="shopCar_js/del.js"></script>
+	<script src="shopCar_js/pay.js"></script>
+	</body>
+</html>
